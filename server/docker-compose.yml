@@ -48,5 +48,18 @@ services:
       timeout: 45s
       interval: 10s
       retries: 10
+  mariadb:
+    image: mariadb:10.8
+    volumes:
+      - mariadb:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      TZ: UTC+6
+      MYSQL_DATABASE: nest_smartmart
+      MYSQL_USER: default
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: root
 volumes:
   postgres: ~
+  mariadb:

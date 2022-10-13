@@ -1,0 +1,21 @@
+{
+  "name": "amplication-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/k0lyan/amplication-test.git",
+  "author": "nikolayampleyev <ampleyev_ne@mail.ru>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "admin-ui",
+    "server"
+  ],
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  },
+  "scripts": {
+    "fe:admin": "yarn workspace @my-service/admin start",
+    "be:server": "yarn workspace @my-service/server start:watch",
+    "dev": "concurrently --kill-others-on-fail \"yarn be:server\"  \"yarn fe:admin\""
+  }
+}
