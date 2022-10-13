@@ -1,8 +1,20 @@
 [
   {
+    "role": "supplier",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "supplier",
+    "resource": "User",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -12,7 +24,7 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "supplier",
     "resource": "User",
     "action": "update:any",
     "attributes": "*"
@@ -20,7 +32,25 @@
   {
     "role": "user",
     "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supplier",
+    "resource": "User",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supplier",
+    "resource": "User",
+    "action": "read:any",
     "attributes": "*"
   },
   {
@@ -30,9 +60,21 @@
     "attributes": "*"
   },
   {
+    "role": "supplier",
+    "resource": "Supplier",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "Supplier",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "supplier",
+    "resource": "Supplier",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -42,7 +84,7 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "supplier",
     "resource": "Supplier",
     "action": "update:any",
     "attributes": "*"
@@ -50,7 +92,25 @@
   {
     "role": "user",
     "resource": "Supplier",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supplier",
+    "resource": "Supplier",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Supplier",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supplier",
+    "resource": "Supplier",
+    "action": "read:any",
     "attributes": "*"
   },
   {
